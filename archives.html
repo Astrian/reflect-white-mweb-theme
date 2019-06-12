@@ -1,0 +1,12 @@
+<div class="container archives">
+    <h1>存档</h1>
+    {% for p in posts %}
+		{% if p.year.length %} 
+		  	<h2>{{ p.year }}</h2>
+		{% /if %}
+		
+        <article>
+            <span><a href="{{ p.url }}">{{ p.title }}</a> / {{ p.dateYear }} {{ p.dateMonth }} {{ p.dateDay }}</span>
+        </article>
+ 	{% /for %} 
+</div>

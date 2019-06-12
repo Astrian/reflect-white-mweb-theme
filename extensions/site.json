@@ -1,0 +1,14 @@
+[
+    {
+       "title": "你的笔名",
+       "variableName": "username",
+       "inputFieldHeight": 22,
+       "exampleText": "John Appleseed"
+    },
+    {
+        "title": "脚注信息",
+        "variableName": "footer",
+        "inputFieldHeight": 66,
+        "exampleText": "使用 <br> 来进行换行..."
+     }
+ ]

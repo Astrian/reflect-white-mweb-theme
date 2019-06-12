@@ -1,0 +1,14 @@
+[
+    {
+       "title":"次要标题",
+       "variableName":"subtitle",
+       "inputFieldHeight":22,
+       "exampleText":"一句话概括文章写了什么。"
+    },
+    {
+        "title":"题图",
+        "variableName":"featureimg",
+        "inputFieldHeight":22,
+        "exampleText":"给文章配一个好看的大题图。"
+     }
+ ]

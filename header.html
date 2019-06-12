@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if pageTitle.length %}  
+      {{ pageTitle }}
+      {% else %}
+      {{ siteName }}
+      {% /if %}
+    </title>
+    <link href="atom.xml" rel="alternate" title="{{ siteName }}" type="application/atom+xml">
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="blogname">{{ siteName }}</div>
+            <nav>
+              {% for m in siteMenu %}
+                <div class="item"><a target="{{ m.target }}" href="{{ m.url }}">{{ m.name }}</a></div>
+              {% /for %}
+            </nav>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
