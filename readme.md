@@ -7,14 +7,14 @@ Reflect White 是一款适用于 [MWeb app](https://zh.mweb.im/) 的静态博客
 如果你不会使用 Git：
 
 - 点击右上角的「Clone or download」按钮，选择 Download ZIP
-- 将下载回来的 ZIP 解压至 `/Users/<Your Username>/Library/Containers/com.coderforart.MWeb3/Data/Documents/themes` 下
+- 将下载回来的 ZIP 解压至 `/Users/<Your Username>/Library/Containers/com.coderforart.MWeb3/Data/Documents/themes/SiteThemes` 下
 - 在 MWeb 中右键点击希望应用主题的静态网站文档库，点击「模板」右侧的「刷新」按钮，并在「模板」列表中找到 `reflect-white-mweb-theme` 主题
 - `生成网站`
 
 如果你会使用 Git：
 
 ```
-cd /Users/<Your Username>/Library/Containers/com.coderforart.MWeb3/Data/Documents/themes
+cd /Users/<Your Username>/Library/Containers/com.coderforart.MWeb3/Data/Documents/themes/SiteThemes
 git clone https://github.com/Astrian/reflect-white-mweb-theme
 ```
 
