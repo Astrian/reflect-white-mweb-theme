@@ -12,6 +12,16 @@
       {{ siteName }}
       {% /if %}
     </title>
+    {% if post.ext_subtitle.length %}
+      <meta name="twitter:card" content="summary_large_image"></meta>
+      <meta name="twitter:creator" content="@Astrian_Zheng"></meta>
+      <meta property="og:url" content="{{siteURL}}{{ post.url }}" />
+      <meta property="og:title" content="{{post.title}}" />
+      <meta property="og:description" content="{{post.ext_subtitle}}" />
+      <meta property="og:image" content="{{post.ext_featureimg}}" />
+      <meta name="twitter:image" content="{{post.ext_featureimg}}">
+      <meta name="description" content="{{post.ext_subtitle}}" />
+    {% /if %}
     <link href="atom.xml" rel="alternate" title="{{ siteName }}" type="application/atom+xml">
     <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
     {{siteOther}}
