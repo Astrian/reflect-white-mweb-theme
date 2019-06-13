@@ -41,7 +41,7 @@
   {% /for %} 
   </div>
   <div class="pagenavi">
-    <div class="item">{% if prevPageUrl.length %}<a href="{{ nextPageUrl }}">更新文章</a>{% else %}已是最新一页{% /if %}</div>
+    <div class="item">{% if prevPageUrl.length %}<a href="{{ prevPageUrl }}">更新文章</a>{% else %}已是最新一页{% /if %}</div>
     <div class="item"> · </div>
     <div class="item">{% if nextPageUrl.length %}<a href="{{ nextPageUrl }}">旧有文章</a>{% else %}已是最旧一页{% /if %}</div>
   </div>
