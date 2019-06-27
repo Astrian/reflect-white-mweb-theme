@@ -217,7 +217,7 @@ iframe {
 @media (max-width: 767.98px) {
   .article.huge .featureimg {
     height: 250px;
-    margin: 0px -16px;
+    margin: 0px -15px;
   }
   .article.huge .content {
     margin-top: 0px;
@@ -232,11 +232,11 @@ iframe {
     font-size: 22px;
   }
   figure {
-    margin: 0px -16px;
+    margin: 0px -15px;
   }
   .article.huge figure figcaption {
-    margin-left: 16px;
-    margin-right: 48px;
+    margin-left: 15px;
+    margin-right: 45px;
     font-size: 14px;
     padding-top: 4px;
   }
@@ -274,11 +274,14 @@ iframe {
     padding-top: 6px;
   }
   .article.normal {
-    border-top: 0.5px solid rgba(0,0,0,0.1);
+    border-top: 0.5px solid rgba(0,0,0,0.06);
     border-width: 30%;
     padding: 10px 0px;
   }
   .otherposts .col-md-6:first-child .normal {
     border-top: none;
+  }
+  #likecoinarea {
+    font-size: 14px;
   }
 }
