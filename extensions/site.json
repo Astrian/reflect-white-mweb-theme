@@ -12,6 +12,12 @@
         "exampleText": "使用 <br> 来进行换行..."
      },
      {
+         "title": "Favicon 图标",
+         "variableName": "favicon",
+         "inputFieldHeight": 22,
+         "exampleText": "可留空，浏览器会使用默认标志替代它"
+      },
+     {
          "title": "你的 Like.co 用户名",
          "variableName": "likecoinusername",
          "inputFieldHeight": 22,
