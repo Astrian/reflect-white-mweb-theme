@@ -139,6 +139,15 @@ a.item .article.normal .subtitle {
 a:hover.item{
   text-decoration: none;
 }
+.article.huge .post blockquote{
+  padding-left: 32px;
+  font-style: italic;
+  color: #146679;
+}
+.article.huge .post blockquote p {
+  font-size: 23px;
+  line-height: 40px;
+}
 
 .pagenavi {
   display: flex;
