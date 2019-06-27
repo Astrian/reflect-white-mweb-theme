@@ -19,6 +19,7 @@
     <updated>{{ p.artDate }}</updated>
     <id>{{ siteURL }}{{ p.url }}</id>
     <content type="html"><![CDATA[
+    <img src="{{p.ext_featureimg}}" />
 {{ p.content }}
 ]]></content>
   </entry>
