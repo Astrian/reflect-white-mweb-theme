@@ -36,10 +36,13 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 - 网站其他代码：可以插入需要在 `<head>` 部分插入的代码。
 
 ### 网站扩展配置
-![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/bffKIHI.png)
+![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/AelEl8y.png)
 
 - 你的笔名：会应用于 RSS 输出。
 - 脚注信息：会应用于每页底部的小字体脚注。
+- 你的 Like.co 用户名：如果你有 [Like.co](https://like.co/in) 的创作者帐户，可在此填入你的 Liker ID。填入后，每篇文章底部将会显示你的 Liker Widget，当读者注册后为你的文章点赞，你将可获得实质性收入。
+
+![Like Widget 效果示例](https://i.imgur.com/aWYyVbW.png)
 
 ### 网站菜单设置
 ![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/ajxmEnT.png)
@@ -55,5 +58,5 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 - 题图：会在文章详情页和列表页显示。
 
 ## 未来更新计划
-- [ ] 优化移动设备使用
+- [x] 优化移动设备使用
 - [ ] 支持 PWA

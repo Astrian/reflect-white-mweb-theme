@@ -12,6 +12,7 @@ body {
 }
 .head nav{
   display: flex;
+  flex-wrap: wrap;
 }
 .head nav .item {
   padding: 0px 20px 0px 0px;
@@ -100,15 +101,17 @@ body {
   padding: 8px 20px;
 }
 .article.huge figure figcaption {
-  text-align: center;
   font-size: 16px;
   color: rgba(0,0,0,0.5);
-  padding-top: 5px;
+  padding-top: 8px;
 }
-figure {
+.article figure {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.article .post hr {
+  width: 30%;
+  border: 0.5px solid rgba(0,0,0,0.1);
 }
 
 .article.normal .featureimg {
@@ -134,6 +137,15 @@ a.item .article.normal .subtitle {
 }
 a:hover.item{
   text-decoration: none;
+}
+.article.huge .post blockquote{
+  padding-left: 32px;
+  font-style: italic;
+  color: #146679;
+}
+.article.huge .post blockquote p {
+  font-size: 23px;
+  line-height: 40px;
 }
 
 .pagenavi {
@@ -161,6 +173,22 @@ a:hover.item{
   display: flex;
 }
 
+#likecoinarea {
+  text-align: center;
+  color: gray;
+}
+#likecoinarea a {
+  color: gray;
+  text-decoration: underline;
+}
+#likecoinarea a:hover {
+  color: gray;
+}
+
+.comment h1 {
+  font-size: 20px;
+}
+
 .footer {
   padding-top: 20px;
   padding-bottom: 40px;
@@ -183,4 +211,78 @@ a:hover.item{
 iframe {
   width: 100%;
   border: none;
+}
+
+/* Mobile devices-friendly styles */
+
+@media (max-width: 767.98px) {
+  .article.huge .featureimg {
+    height: 250px;
+    margin: 0px -15px;
+  }
+  .article.huge .content {
+    margin-top: 0px;
+  }
+  .article.huge .headline {
+    font-size: 25px;
+  }
+  .article.huge .subtitle {
+    font-size: 20px;
+  }
+  .article h2 {
+    font-size: 22px;
+  }
+  figure {
+    margin: 0px -15px;
+  }
+  .article.huge figure figcaption {
+    margin-left: 15px;
+    margin-right: 45px;
+    font-size: 14px;
+    padding-top: 4px;
+  }
+  .article.huge .post p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .article.huge .post blockquote p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .article.normal {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  .article.normal .featureimg {
+    height: 90px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    flex: 1;
+  }
+  .article.normal .articleinfo {
+    flex: 2;
+    margin-right: 12px;
+  }
+  a.item .article.normal .headline {
+    font-size: 16px;
+  }
+  a.item .article.normal .subtitle {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    padding-top: 6px;
+  }
+  .article.normal {
+    border-top: 0.5px solid rgba(0,0,0,0.06);
+    border-width: 30%;
+    padding: 10px 0px;
+  }
+  .otherposts .col-md-6:first-child .normal {
+    border-top: none;
+  }
+  #likecoinarea {
+    font-size: 14px;
+  }
 }

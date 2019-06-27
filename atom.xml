@@ -16,9 +16,11 @@
   <entry>
     <title type="html"><![CDATA[{{ p.title }}]]></title>
     <link href="{{ siteURL }}{{ p.url }}"/>
+    <author><name><![CDATA[{{ext_username}}]]></name></author>
     <updated>{{ p.artDate }}</updated>
     <id>{{ siteURL }}{{ p.url }}</id>
     <content type="html"><![CDATA[
+    <img src="{{p.ext_featureimg}}" />
 {{ p.content }}
 ]]></content>
   </entry>
