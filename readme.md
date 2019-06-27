@@ -1,7 +1,13 @@
 # Reflect White 静态博客主题
-![主题预览](https://i.imgur.com/OZNoO1I.png)
+![主题预览](https://i.imgur.com/qIOLsWa.png)
 
-Reflect White 是一款适用于 [MWeb app](https://zh.mweb.im/) 的静态博客主题。它拥有简洁大气的外观设计，以及完善的 MWeb 动态内容支持。
+Reflect White 是一款适用于 [MWeb app](https://zh.mweb.im/) 的静态博客主题。它拥有如下特点：
+
+- 简洁大气的文章排版设计
+- 分别针对移动设备与桌面设备优化
+- 支持 `prefers-color-scheme: dark` 动态明暗样式主题，使用暗色模式时，网页也会变成暗色模式
+- 原生支持 Like.co/in 小组件，让读者的赞赏化为实质收入
+- 支持大量 MWeb 个性化特性，轻松修改设置，让你的博客与众不同
 
 [点击这里](https://astrianzheng.cn) 在线预览本主题。
 
@@ -40,6 +46,7 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 
 - 你的笔名：会应用于 RSS 输出。
 - 脚注信息：会应用于每页底部的小字体脚注。
+- Favicon 图标：访客打开你的网站时，浏览器会将其标志于网页标签页图标。可以使用 PNG 和 ICO 格式的图片。
 - 你的 Like.co 用户名：如果你有 [Like.co](https://like.co/in) 的创作者帐户，可在此填入你的 Liker ID。填入后，每篇文章底部将会显示你的 Liker Widget，当读者注册后为你的文章点赞，你将可获得实质性收入。
 
 ![Like Widget 效果示例](https://i.imgur.com/aWYyVbW.png)
