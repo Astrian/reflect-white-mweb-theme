@@ -10,5 +10,11 @@
         "variableName": "footer",
         "inputFieldHeight": 66,
         "exampleText": "使用 <br> 来进行换行..."
-     }
+     },
+     {
+         "title": "你的 Like.co 用户名",
+         "variableName": "likecoinusername",
+         "inputFieldHeight": 22,
+         "exampleText": "如无可不填写"
+      }
  ]
