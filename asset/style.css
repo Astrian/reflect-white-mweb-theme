@@ -110,6 +110,10 @@ figure {
   flex-direction: column;
   align-items: center;
 }
+.article .post hr {
+  width: 30%;
+  border: 0.5px dashed rgba(0,0,0,0.3);
+}
 
 .article.normal .featureimg {
   height: 280px;
