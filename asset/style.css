@@ -286,3 +286,67 @@ iframe {
     font-size: 14px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(24, 31, 32);
+    color: white;
+  }
+  .head .blogname {
+    color: white;
+  }
+  .article.huge .subtitle, a.item .article.normal .subtitle {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .head nav .item a {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .head nav .item a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .article.huge .main p {
+    color: rgb(197, 197, 197);
+  }
+  .article.huge .main h2, .article.huge .main h3, .article.huge .main h4, .article.huge .main h5, .article.huge .main h6 {
+    color: rgb(226, 226, 226);
+  }
+  .article.huge .main {
+    background-color: rgb(24, 31, 32);
+  }
+  .article.huge .headline a, .article.huge .headline a:hover, a.item .article.normal .headline, a.item:hover .article.normal .headline  {
+    color: #2aa7c4;
+  }
+  .article.huge .body a, .article.huge .body a:hover {
+    color: rgb(64, 180, 212);
+  }
+  .article.huge figure figcaption {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .article.huge .time {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  hr {
+    border: 0.5px solid rgba(255,255,255,0.4);
+  }
+  .article .post hr {
+    border: 0.5px solid rgba(255,255,255,0.2);
+  }
+  .footer .slogan {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer .meta, .footer a {
+    color: rgba(255, 255, 255, 0.45);
+  }
+  .article.huge .post blockquote p{
+    color: #308396;
+  }
+  #likecoinarea a, #likecoinarea a:hover {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: underline;
+  }
+  @media (max-width: 767.98px) {
+    .article.normal {
+      border-top: 0.5px solid rgba(255,255,255,0.06);
+    }
+  }
+}
