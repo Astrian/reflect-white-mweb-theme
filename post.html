@@ -11,7 +11,7 @@
             <div class="post">
               <div class="headline"><a href="{{ post.url }}">{{ post.title }}</a></div>
               <div class="subtitle">{{post.ext_subtitle}}</div>
-              <div class="time" id="post">$[timeformat('{{ post.date }}')]</div>
+              <div class="time" id="post"">$[timeformat('{{post.dateGTM}}')]</div>
               <div class="body">
                   {{ post.content }}
               </div>
