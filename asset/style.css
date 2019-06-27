@@ -102,7 +102,7 @@ body {
 }
 .article.huge figure figcaption {
   font-size: 16px;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.4);
   padding-top: 8px;
 }
 .article figure {
@@ -235,10 +235,10 @@ iframe {
     margin: 0px -15px;
   }
   .article.huge figure figcaption {
-    margin-left: 15px;
-    margin-right: 45px;
+    margin-left: 8px;
     font-size: 14px;
-    padding-top: 4px;
+    padding-top: 2px;
+    width: 65%;
   }
   .article.huge .post p {
     font-size: 16px;
