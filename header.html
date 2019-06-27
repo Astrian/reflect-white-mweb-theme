@@ -23,6 +23,9 @@
       <meta name="description" content="{{post.ext_subtitle}}" />
       <meta property="og:site_name" content="{{ siteName }}">
     {% /if %}
+    {% if ext_favicon.length %}
+      <link rel="icon" href="{{ext_favicon}}">
+    {% /if %}
     <link href="atom.xml" rel="alternate" title="{{ siteName }}" type="application/atom+xml">
     <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
     {{siteOther}}
