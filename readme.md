@@ -55,7 +55,7 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 ![文章扩展信息设置](https://i.imgur.com/hypFXJN.png)
 
 - 次要标题：会在文章详情页和列表页的文章标题之下显示，帮助读者快速了解文章的主旨。相当于微信公众号中的「摘要」一栏。
-- 题图：会在文章详情页和列表页显示。
+- 题图：会在文章详情页和列表页显示。**可以使用 MWeb 提供的相对路径**，也可以使用网络图片或 CDN 图片。
 
 ## 未来更新计划
 - [x] 优化移动设备使用
