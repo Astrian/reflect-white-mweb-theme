@@ -314,7 +314,7 @@ iframe {
     background-color: rgb(24, 31, 32);
   }
   .article.huge .headline a, .article.huge .headline a:hover, a.item .article.normal .headline, a.item:hover .article.normal .headline  {
-    color: #2aa7c4;
+    color: #c8dce0;
   }
   .article.huge .body a, .article.huge .body a:hover {
     color: rgb(64, 180, 212);
