@@ -42,7 +42,7 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 - 网站其他代码：可以插入需要在 `<head>` 部分插入的代码。
 
 ### 网站扩展配置
-![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/AelEl8y.png)
+![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/D2wpgqq.png)
 
 - 你的笔名：会应用于 RSS 输出。
 - 脚注信息：会应用于每页底部的小字体脚注。
