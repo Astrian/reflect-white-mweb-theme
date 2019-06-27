@@ -5,7 +5,7 @@ Reflect White 是一款适用于 [MWeb app](https://zh.mweb.im/) 的静态博客
 
 - 简洁大气的文章排版设计
 - 分别针对移动设备与桌面设备优化
-- 支持 `prefers-color-scheme: dark` 动态明暗样式主题，使用暗色模式时，网页也会变成暗色模式
+- 支持 `prefers-color-scheme: dark` 动态明暗样式主题，操作系统或浏览器使用暗色界面模式时，网页也会变成暗色模式
 - 原生支持 Like.co/in 小组件，让读者的赞赏化为实质收入
 - 支持大量 MWeb 个性化特性，轻松修改设置，让你的博客与众不同
 
@@ -42,7 +42,7 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 - 网站其他代码：可以插入需要在 `<head>` 部分插入的代码。
 
 ### 网站扩展配置
-![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/AelEl8y.png)
+![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/D2wpgqq.png)
 
 - 你的笔名：会应用于 RSS 输出。
 - 脚注信息：会应用于每页底部的小字体脚注。
