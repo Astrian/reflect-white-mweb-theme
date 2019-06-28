@@ -1,0 +1,359 @@
+body {
+  font-family: 'Noto Sans CJK SC';
+}
+
+.head {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+.head .blogname {
+  font-size: 60px;
+  color: #1a1a1a;
+}
+.head nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.head nav .item {
+  padding: 0px 20px 0px 0px;
+  margin: 10px 0px 0px 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.head nav .item a {
+  color: rgba(0, 0, 50, 0.3);
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.head nav .item a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 50, 0.6);
+}
+
+.article.huge {
+  padding-bottom: 40px;
+}
+.article.huge img {
+  max-width: 100%;
+}
+.article.huge .featureimg {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.article.huge .content {
+  margin-top: -130px;
+}
+.article.huge .headline {
+  font-size: 35px;
+}
+.article.huge .headline a {
+  color: #042f39;
+}
+.article.huge .headline a:hover {
+  color: #042f39;
+  text-decoration: none;
+}
+.article.huge .subtitle {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+}
+.article.huge .main {
+  background-color: white;
+}
+.article.huge .post {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.article.huge .post p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.article.huge .time {
+  font-size: 14px;
+  color: rgba(20, 102, 121, 0.5);
+  padding-top: 15px;
+}
+.article.huge .tags {
+  margin-bottom: 5px;
+}
+.article.huge .tags .item {
+  margin-right: 5px;
+}
+.article.huge .tags .item a {
+  font-size: 14px;
+  color: rgba(20, 102, 121, 0.5);
+}
+.article.huge .tags .item a:hover {
+  color: rgba(20, 102, 121, 0.5);
+}
+.article.huge .body {
+  text-align:justify;
+}
+.article.huge .body a {
+  color: rgb(25, 94, 114);
+}
+.article.huge .continue {
+  color: white;
+  background-color: #146679;
+  padding: 8px 20px;
+}
+.article.huge figure figcaption {
+  font-size: 16px;
+  color: rgba(0,0,0,0.4);
+  padding-top: 4px;
+  width: 65%;
+  margin-left: 30px;
+}
+.article figure {
+  display: flex;
+  flex-direction: column;
+}
+.article .post hr {
+  width: 30%;
+  border: 0.5px solid rgba(0,0,0,0.1);
+}
+
+.article.normal .featureimg {
+  height: 280px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+}
+.article.normal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+}
+a.item .article.normal .headline {
+  font-size: 28px;
+  color: #042f39;
+}
+a.item .article.normal .subtitle {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+a:hover.item{
+  text-decoration: none;
+}
+.article.huge .post blockquote{
+  padding-left: 32px;
+  color: #146679;
+}
+.article.huge .post blockquote p {
+  font-size: 23px;
+  line-height: 40px;
+}
+
+.pagenavi {
+  display: flex;
+  justify-content: center;
+}
+.pagenavi .item {
+  color: rgba(0, 0, 50, 0.3);
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.pagenavi .item a {
+  color: rgba(0, 0, 50, 0.5);
+}
+.pagenavi .item a:hover {
+  text-decoration: none;
+}
+
+.archives h1 small {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+} 
+
+.otherposts {
+  display: flex;
+}
+
+#likecoinarea {
+  text-align: center;
+  color: gray;
+}
+#likecoinarea a {
+  color: gray;
+  text-decoration: underline;
+}
+#likecoinarea a:hover {
+  color: gray;
+}
+
+.comment h1 {
+  font-size: 20px;
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.footer .slogan {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+.footer .meta {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+.footer a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+}
+iframe {
+  width: 100%;
+  border: none;
+}
+
+span.smallcaps {
+  font-variant: all-small-caps;
+}
+
+/* Mobile devices-friendly styles */
+
+@media (max-width: 767.98px) {
+  .article.huge .featureimg {
+    height: 250px;
+    margin: 0px -15px;
+  }
+  .article.huge .content {
+    margin-top: 0px;
+  }
+  .article.huge .headline {
+    font-size: 25px;
+  }
+  .article.huge .subtitle {
+    font-size: 20px;
+  }
+  .article h2 {
+    font-size: 22px;
+  }
+  figure {
+    margin: 0px -15px;
+  }
+  .article.huge figure figcaption {
+    margin-left: 26px;
+    font-size: 14px;
+    padding-top: 2px;
+  }
+  .article.huge .post p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .article.huge .post blockquote p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .article.normal {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  .article.normal .featureimg {
+    height: 90px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    flex: 1;
+  }
+  .article.normal .articleinfo {
+    flex: 2;
+    margin-right: 12px;
+  }
+  a.item .article.normal .headline {
+    font-size: 16px;
+  }
+  a.item .article.normal .subtitle {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    padding-top: 6px;
+  }
+  .article.normal {
+    border-top: 0.5px solid rgba(0,0,0,0.06);
+    border-width: 30%;
+    padding: 10px 0px;
+  }
+  .otherposts .col-md-6:first-child .normal {
+    border-top: none;
+  }
+  #likecoinarea {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(24, 31, 32);
+    color: white;
+  }
+  .head .blogname {
+    color: white;
+  }
+  .article.huge .subtitle, a.item .article.normal .subtitle {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .head nav .item a, .pagenavi .item a {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .head nav .item a:hover, .pagenavi .item a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .pagenavi .item {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  .article.huge .main p {
+    color: rgb(197, 197, 197);
+  }
+  .article.huge .main h2, .article.huge .main h3, .article.huge .main h4, .article.huge .main h5, .article.huge .main h6 {
+    color: rgb(226, 226, 226);
+  }
+  .article.huge .main {
+    background-color: rgb(24, 31, 32);
+  }
+  .article.huge .headline a, .article.huge .headline a:hover, a.item .article.normal .headline, a.item:hover .article.normal .headline  {
+    color: #c8dce0;
+  }
+  .article.huge .body a, .article.huge .body a:hover {
+    color: rgb(64, 180, 212);
+  }
+  .article.huge figure figcaption {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .article.huge .time {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  hr {
+    border: 0.5px solid rgba(255,255,255,0.4);
+  }
+  .article .post hr {
+    border: 0.5px solid rgba(255,255,255,0.2);
+  }
+  .footer .slogan {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer .meta, .footer a {
+    color: rgba(255, 255, 255, 0.45);
+  }
+  .article.huge .post blockquote p{
+    color: #308396;
+  }
+  #likecoinarea a, #likecoinarea a:hover {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: underline;
+  }
+  @media (max-width: 767.98px) {
+    .article.normal {
+      border-top: 0.5px solid rgba(255,255,255,0.06);
+    }
+  }
+}
