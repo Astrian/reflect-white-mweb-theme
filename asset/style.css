@@ -302,11 +302,14 @@ span.smallcaps {
   .article.huge .subtitle, a.item .article.normal .subtitle {
     color: rgba(255, 255, 255, 0.5);
   }
-  .head nav .item a {
+  .head nav .item a, .pagenavi .item a {
     color: rgba(255, 255, 255, 0.3);
   }
-  .head nav .item a:hover {
+  .head nav .item a:hover, .pagenavi .item a:hover {
     color: rgba(255, 255, 255, 0.6);
+  }
+  .pagenavi .item {
+    color: rgba(255, 255, 255, 0.2);
   }
   .article.huge .main p {
     color: rgb(197, 197, 197);
