@@ -214,6 +214,10 @@ iframe {
   border: none;
 }
 
+span.smallcaps {
+  font-variant: all-small-caps;
+}
+
 /* Mobile devices-friendly styles */
 
 @media (max-width: 767.98px) {
