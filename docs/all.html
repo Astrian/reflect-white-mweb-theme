@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+    <title>
+        
+      Reflect White
+      
+    </title>
+    
+    
+    
+    <link href="atom.xml" rel="alternate" title="Reflect White" type="application/atom+xml">
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="blogname">Reflect White</div>
+            <nav>
+              
+                <div class="item"><a target="_self" href="/">主页</a></div>
+              
+                <div class="item"><a target="_self" href="https://github.com/Astrian/reflect-white-mweb-theme/">获取该主题</a></div>
+              
+            </nav>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div> <div class="container" id="category">
+  
+    
+      <div class="article huge">
+        <div class="featureimg" style="background-image: url('media/15617266744567/markus-spiske-3Wq2HI5mTaI-unsplash.jpg')"></div>
+        <div class="row content">
+          <div class="col-md-2"></div>
+          <div class="col-md-10 main">
+            <div class="row">
+              <div class="col-md-10 post">
+                <div class="headline"><a href="15617266744567.html">Reflect White 示例页面</a></div>
+                <div class="subtitle">喜欢的话，现在就可以应用于你的网站。</div>
+                <div class="time">$[timeformat('2019-06-28T21:35:30+08:00')]</div>
+                <div class="body">
+                    <p>如你所见，你正在访问的站点是 MWeb 静态网站主题 Reflect White 的示例站点。你可以在此尽情欣赏主题的细节设计。如果喜欢，不要忘记<a href="https://github.com/Astrian/reflect-white-mweb-theme">将它应用于你的 MWeb 生成的静态网站</a>。</p>
+
+
+                </div>
+                <div class="bottom">
+                  <a href="15617266744567.html" class="continue float-right">
+                    继续阅读
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="otherposts row">
+    
+  
+    
+        <div class="col-md-6">
+          <a href="15617287871807.html" class="item">
+            <div class="article normal">
+              <div class="featureimg" style="background-image: url('https://cdn.astrianzheng.cn/mwebmedia/2019/06/26/15615338413321.jpg')"></div>
+              <div class="articleinfo">
+                <div class="headline">玩手机游戏，真的需要一个手柄吗？· Now Playing #11</div>
+                <div class="subtitle">手机游戏最终回到了更传统的模样。</div>
+              </div>
+            </div>
+          </a>
+        </div>
+    
+  
+    
+        <div class="col-md-6">
+          <a href="15617289306867.html" class="item">
+            <div class="article normal">
+              <div class="featureimg" style="background-image: url('media/15617289306867/denys-nevozhai-dq93aNzsrH0-unsplash.jpg')"></div>
+              <div class="articleinfo">
+                <div class="headline">圣经·创世记（摘录）</div>
+                <div class="subtitle">神看着一切所造的都甚好，有晚上，有早晨。</div>
+              </div>
+            </div>
+          </a>
+        </div>
+    
+   
+  </div>
+  <div class="pagenavi">
+    <div class="item">已是最新一页</div>
+    <div class="item"> · </div>
+    <div class="item">已是最旧一页</div>
+  </div>
+ </div>
+ <script>
+   let category = new Vue({
+    el: '#category',
+    data: {},
+    methods: {
+      indexOddandEven(index) {
+        return index%2 ? 'odd' : 'even';
+      },
+      timeformat(raw) {
+        return moment(raw).format("YYYY 年 MM 月 DD 日");
+      }
+    },
+    delimiters: ['$[', ']']
+  })
+ </script>
+      <div class="container">
+      <hr>
+      <div class="footer" id="footer">
+        <div class="slogan">心的联系就是我的力量。</div>
+        <div class="meta">
+          <p>部分示例文章来自<a href="https://astrianzheng.cn">本格异想录</a>及公共版权资料，遵循各自转载授权模式。</p>
+          <p>「Reflect White」使用 <a href="https://github.com/Astrian/reflect-white-mweb-theme">Reflect White</a> 视觉主题。</p>
+        </div>
+      </div>
+      <script>
+        let footer = new Vue({
+          el: '#footer',
+          data: {
+            message: 'hello'
+          },
+          delimiters: ['$[', ']']
+        })
+      </script>
+    </div>
+  </div>
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
