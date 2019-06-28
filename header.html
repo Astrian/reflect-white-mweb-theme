@@ -2,9 +2,8 @@
 <html lang="zh-cn">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
     <title>
       {% if pageTitle.length %}  
       {{ pageTitle }}
@@ -12,16 +11,17 @@
       {{ siteName }}
       {% /if %}
     </title>
-    {% if post.url.length %}
-      <meta name="twitter:card" content="summary_large_image"></meta>
-      <meta name="twitter:creator" content="@Astrian_Zheng"></meta>
+    {% if posts.length %}
+    {% else %}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@Astrian_Zheng" />
       <meta property="og:url" content="{{siteURL}}{{ post.url }}" />
       <meta property="og:title" content="{{post.title}}" />
       <meta property="og:description" content="{{post.ext_subtitle}}" />
       <meta property="og:image" content="{{post.ext_featureimg}}" />
       <meta name="twitter:image" content="{{post.ext_featureimg}}">
       <meta name="description" content="{{post.ext_subtitle}}" />
-      <meta property="og:site_name" content="{{ siteName }}">
+      <meta property="og:site_name" content="{{ siteName }}" />
     {% /if %}
     {% if ext_favicon.length %}
       <link rel="icon" href="{{ext_favicon}}">

@@ -66,4 +66,4 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 
 ## 未来更新计划
 - [x] 优化移动设备使用
-- [ ] 支持 PWA
+- [ ] 支持 AMP
