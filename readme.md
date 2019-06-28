@@ -9,7 +9,7 @@ Reflect White 是一款适用于 [MWeb app](https://zh.mweb.im/) 的静态博客
 - 原生支持 Like.co/in 小组件，让读者的赞赏化为实质收入
 - 支持大量 MWeb 个性化特性，轻松修改设置，让你的博客与众不同
 
-[点击这里](https://astrianzheng.cn) 在线预览本主题。
+[点击这里](https://reflect-white-sample.astrianzheng.cn/) 在线预览本主题。
 
 ## 安装方法
 如果你不会使用 Git：
