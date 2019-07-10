@@ -110,6 +110,7 @@ body {
 .article figure {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .article .post hr {
   width: 30%;
