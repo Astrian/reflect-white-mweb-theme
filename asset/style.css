@@ -225,6 +225,19 @@ span.smallcaps {
   font-variant: all-small-caps;
 }
 
+#page {
+  margin: 40px 0px;
+}
+#page h1.title {
+  font-size: 35px;
+  color: #042f39;
+  font-weight: 300;
+}
+#page .content{
+  padding-top: 30px;
+  font-size: 16px;
+}
+
 /* Mobile devices-friendly styles */
 
 @media (max-width: 767.98px) {
