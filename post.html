@@ -1,7 +1,7 @@
 <div class="container" id="post">
   <div class="article huge">
-    <div class="featureimg" style="background-image: url('{{post.ext_featureimg}}')"></div>
-    <img src="{{post.ext_featureimg}}" style="display: none;" class="featureimgforexternal">
+    <div class="featureimg" style="background-image: url('{% if post.ext_featureimg.length %}{{post.ext_featureimg}}{% /if %}')"></div>
+    <img src="{% if post.ext_featureimg.length %}{{post.ext_featureimg}}{% /if %}" style="display: none;" class="featureimgforexternal">
     <div class="timeGTM" style="display:none;">{{post.dateGTM}}</div>
     <div class="row content">
       <div class="col-md-2"></div>
@@ -10,7 +10,7 @@
           <div class="col-md-10">
             <div class="post">
               <div class="headline"><a href="{{ post.url }}">{{ post.title }}</a></div>
-              <div class="subtitle">{{post.ext_subtitle}}</div>
+              {% if post.ext_subtitle.length %}<div class="subtitle">{{post.ext_subtitle}}</div>{% /if %}
               <div class="time">$[timeformat('{{post.dateGTM}}')]</div>
               <div class="body">
                   {{ post.content }}

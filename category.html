@@ -2,14 +2,14 @@
   {% for p in posts %}
     {% if currentLoop.currentIndex == 0 %}
       <div class="article huge">
-        <div class="featureimg" style="background-image: url('{{p.ext_featureimg}}')"></div>
+        <div class="featureimg" style="background-image: url('{% if p.ext_featureimg.length %}{{p.ext_featureimg}}{% /if %}')"></div>
         <div class="row content">
           <div class="col-md-2"></div>
           <div class="col-md-10 main">
             <div class="row">
               <div class="col-md-10 post">
                 <div class="headline"><a href="{{ p.url }}">{{ p.title }}</a></div>
-                <div class="subtitle">{{p.ext_subtitle}}</div>
+                {% if p.ext_subtitle.length %}<div class="subtitle">{{p.ext_subtitle}}</div>{% /if %}
                 <div class="time">$[timeformat('{{p.dateGTM}}')]</div>
                 <div class="body">
                     {{ p.desContent }}
@@ -29,10 +29,10 @@
         <div class="col-md-6">
           <a href="{{ p.url }}" class="item">
             <div class="article normal">
-              <div class="featureimg" style="background-image: url('{{p.ext_featureimg}}')"></div>
+              <div class="featureimg" style="background-image: url('{% if p.ext_featureimg.length %}{{p.ext_featureimg}}{% /if %}')"></div>
               <div class="articleinfo">
                 <div class="headline">{{ p.title }}</div>
-                <div class="subtitle">{{p.ext_subtitle}}</div>
+                {% if p.ext_subtitle.length %}<div class="subtitle">{{p.ext_subtitle}}</div>{% /if %}
               </div>
             </div>
           </a>

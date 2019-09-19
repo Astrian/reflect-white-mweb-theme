@@ -20,7 +20,7 @@
     <updated>{{ p.artDate }}</updated>
     <id>{{ siteURL }}{{ p.url }}</id>
     <content type="html"><![CDATA[
-    <img src="{{p.ext_featureimg}}" />
+    <img src="{% if p.ext_featureimg.length %}{{p.ext_featureimg}}{% /if %}" />
 {{ p.content }}
 ]]></content>
   </entry>
