@@ -241,6 +241,16 @@ span.smallcaps {
 /* Mobile devices-friendly styles */
 
 @media (max-width: 767.98px) {
+  .head .blogname {
+    font-size: 40px;
+  }
+  .head nav .item {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .head nav .item a {
+    letter-spacing: 3px;
+  }
   .article.huge .featureimg {
     height: 250px;
     margin: 0px -15px;
