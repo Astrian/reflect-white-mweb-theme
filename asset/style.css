@@ -238,6 +238,20 @@ span.smallcaps {
   font-size: 16px;
 }
 
+.archives .yeartitle {
+  margin-top: 32px;
+}
+.archives article {
+  padding: 4px 0px;
+}
+.archives article a {
+  color: #042f39;
+}
+.archives article a:hover {
+  color: #042f39;
+  text-decoration: none;
+}
+
 /* Mobile devices-friendly styles */
 
 @media (max-width: 767.98px) {
