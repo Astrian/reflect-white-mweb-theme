@@ -22,5 +22,11 @@
          "variableName": "likecoinusername",
          "inputFieldHeight": 22,
          "exampleText": "如无可不填写"
-      }
+      },
+      {
+          "title": "自定义样式",
+          "variableName": "customstyle",
+          "inputFieldHeight": 110,
+          "exampleText": "不推荐自行修改，如有需要，请在模板开发者的指导下修改该自定义样式。"
+       }
  ]
