@@ -10,5 +10,11 @@
         "variableName":"featureimg",
         "inputFieldHeight":22,
         "exampleText":"给文章配一个好看的大题图。"
-     }
+     },
+     {
+         "title":"隐藏 Like.co 赞赏按钮",
+         "variableName":"hidelikeco",
+         "inputFieldHeight":22,
+         "exampleText":"在此填写 true 可隐藏。"
+      }
  ]

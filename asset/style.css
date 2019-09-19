@@ -1,5 +1,5 @@
 body {
-  font-family: 'Noto Sans CJK SC';
+  font-family: 'Avenir', 'Noto Sans CJK SC', sans-serif;
 }
 
 .head {
@@ -22,7 +22,6 @@ body {
 }
 .head nav .item a {
   color: rgba(0, 0, 50, 0.3);
-  font-weight: 100;
   letter-spacing: 5px;
 }
 .head nav .item a:hover {
@@ -57,7 +56,6 @@ body {
 .article.huge .subtitle {
   font-size: 24px;
   color: rgba(0, 0, 0, 0.4);
-  font-weight: 100;
 }
 .article.huge .main {
   background-color: white;
@@ -116,6 +114,16 @@ body {
   width: 30%;
   border: 0.5px solid rgba(0,0,0,0.1);
 }
+.article.huge .body sup a {
+  color: white;
+  background-color: rgb(25, 94, 114);
+  margin: 0px 4px 0px 2px;
+  padding: 0px 4px;
+  border-radius: 2px;
+}
+.article.huge .body sup a:hover {
+  text-decoration: none;
+}
 
 .article.normal .featureimg {
   height: 280px;
@@ -156,7 +164,6 @@ a:hover.item{
 }
 .pagenavi .item {
   color: rgba(0, 0, 50, 0.3);
-  font-weight: 100;
   letter-spacing: 5px;
 }
 .pagenavi .item a {
@@ -199,7 +206,6 @@ a:hover.item{
   font-size: 30px;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
-  font-weight: 100;
   padding-bottom: 10px;
 }
 .footer .meta {
@@ -219,9 +225,32 @@ span.smallcaps {
   font-variant: all-small-caps;
 }
 
+#page {
+  margin: 40px 0px;
+}
+#page h1.title {
+  font-size: 35px;
+  color: #042f39;
+  font-weight: 300;
+}
+#page .content{
+  padding-top: 30px;
+  font-size: 16px;
+}
+
 /* Mobile devices-friendly styles */
 
 @media (max-width: 767.98px) {
+  .head .blogname {
+    font-size: 40px;
+  }
+  .head nav .item {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .head nav .item a {
+    letter-spacing: 3px;
+  }
   .article.huge .featureimg {
     height: 250px;
     margin: 0px -15px;

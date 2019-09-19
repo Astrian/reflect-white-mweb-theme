@@ -17,10 +17,16 @@
       <meta name="twitter:creator" content="@Astrian_Zheng" />
       <meta property="og:url" content="{{siteURL}}{{ post.url }}" />
       <meta property="og:title" content="{{post.title}}" />
-      <meta property="og:description" content="{{post.ext_subtitle}}" />
-      <meta property="og:image" content="{{post.ext_featureimg}}" />
-      <meta name="twitter:image" content="{{post.ext_featureimg}}">
-      <meta name="description" content="{{post.ext_subtitle}}" />
+      {% if p.ext_subtitle.length %}
+        <meta property="og:description" content="{{post.ext_subtitle}}" />
+        <meta name="description" content="{{post.ext_subtitle}}" />
+      {% else %}
+        <meta property="og:description" content="{{post.title}}" />
+      {% /if %}
+      {% if post.ext_featureimg.length %}
+        <meta property="og:image" content="{{post.ext_featureimg}}" />
+        <meta name="twitter:image" content="{{post.ext_featureimg}}">
+        {% /if %}
       <meta property="og:site_name" content="{{ siteName }}" />
     {% /if %}
     {% if ext_favicon.length %}
