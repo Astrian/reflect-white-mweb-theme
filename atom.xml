@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[{{ p.title }}]]></title>
     <link href="{{ siteURL }}{{ p.url }}"/>
-    <meta name="description" content="{{ext_username}}" /><author><name><![CDATA[{{ext_username}}]]></name></author>{% /if %}
+    {% if ext_username.length %}<meta name="description" content="{{ext_username}}" /><author><name><![CDATA[{{ext_username}}]]></name></author>{% /if %}
     <updated>{{ p.artDate }}</updated>
     <id>{{ siteURL }}{{ p.url }}</id>
     <content type="html"><![CDATA[

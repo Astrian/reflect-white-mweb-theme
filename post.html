@@ -1,6 +1,6 @@
 <div class="container" id="post">
   <div class="article huge">
-    <div class="featureimg" style="background-image: url('{% if post.ext_featureimg.length %}{{post.ext_featureimg}}{% /if %}')"></div>
+    <div class="featureimg" style="background-image: url('{% if post.ext_featureimg.length %}{{post.ext_featureimg}}{% else %}asset/defaultfeaimg.jpg{% /if %}')"></div>
     <img src="{% if post.ext_featureimg.length %}{{post.ext_featureimg}}{% /if %}" style="display: none;" class="featureimgforexternal">
     <div class="timeGTM" style="display:none;">{{post.dateGTM}}</div>
     <div class="row content">

@@ -2,7 +2,7 @@
   {% for p in posts %}
     {% if currentLoop.currentIndex == 0 %}
       <div class="article huge">
-        <div class="featureimg" style="background-image: url('{% if p.ext_featureimg.length %}{{p.ext_featureimg}}{% /if %}')"></div>
+        <div class="featureimg" style="background-image: url('{% if p.ext_featureimg.length %}{{p.ext_featureimg}}{% else %}asset/defaultfeaimg.jpg{% /if %}')"></div>
         <div class="row content">
           <div class="col-md-2"></div>
           <div class="col-md-10 main">
@@ -29,7 +29,7 @@
         <div class="col-md-6">
           <a href="{{ p.url }}" class="item">
             <div class="article normal">
-              <div class="featureimg" style="background-image: url('{% if p.ext_featureimg.length %}{{p.ext_featureimg}}{% /if %}')"></div>
+              <div class="featureimg" style="background-image: url('{% if p.ext_featureimg.length %}{{p.ext_featureimg}}{% else %}asset/defaultfeaimg.jpg{% /if %}')"></div>
               <div class="articleinfo">
                 <div class="headline">{{ p.title }}</div>
                 {% if p.ext_subtitle.length %}<div class="subtitle">{{p.ext_subtitle}}</div>{% /if %}

@@ -1,7 +1,7 @@
     <div class="container">
       <hr>
       <div class="footer" id="footer">
-        {% if siteDes %}<div class="slogan">{{ siteDes }}</div>{% /if %}
+        <div class="slogan">{% if siteDes.length %}{{ siteDes }}{% else %}Let's tessellate.{% /if %}</div>
         <div class="meta">
           {% if ext_footer %}<p>{{ext_footer}}</p>{% /if %}
           <p>「{{siteName}}」使用 <a href="https://zh.mweb.im/" target="_blank">MWeb</a> 和 <a href="https://github.com/Astrian/reflect-white-mweb-theme" target="_blank">Reflect White</a> 搭建。</p>
