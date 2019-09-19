@@ -237,6 +237,9 @@ span.smallcaps {
   padding-top: 30px;
   font-size: 16px;
 }
+#page a:hover {
+  text-decoration: none;
+}
 
 .archives .yeartitle {
   margin-top: 32px;
@@ -394,6 +397,12 @@ span.smallcaps {
   #likecoinarea a, #likecoinarea a:hover {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: underline;
+  }
+  #page h1.title {
+    color: #c8dce0;
+  }
+  #page a, #page a:hover {
+    color: #c8dce0;
   }
   @media (max-width: 767.98px) {
     .article.normal {
