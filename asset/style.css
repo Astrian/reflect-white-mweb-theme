@@ -260,9 +260,18 @@ span.smallcaps {
   text-decoration: none;
 }
 
-#tags .tagname {
-  font-size: 32px;
+#tags .tagmeta {
   text-align: right;
+}
+#tags .tagmeta .tagname {
+  font-size: 32px;
+  color: #042f39;
+}
+#tags .tagmeta .tagpagetitle {
+  color: gray;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 100;
 }
 #tags .posts a {
   text-decoration: none;
@@ -378,6 +387,11 @@ span.smallcaps {
   #likecoinarea {
     font-size: 14px;
   }
+  #tags .tagmeta {
+    text-align: left;
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -450,5 +464,17 @@ span.smallcaps {
     .article.normal {
       border-top: 0.5px solid rgba(255,255,255,0.06);
     }
+  }
+  #tags .tagmeta .tagpagetitle {
+    color: rgb(206, 206, 206);
+  }
+  #tags .tagmeta .tagname, #tags .posts a .post .postcontent .title {
+    color: #c8dce0;
+  }
+  #tags .posts a .post .postcontent .subtitle {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #tags .posts a .post {
+    border-bottom: 1px solid rgba(255,255,255,0.4);
   }
 }
