@@ -30,10 +30,10 @@
     "exampleText": "如无可不填写"
   },
   {
-    "title": "文章标签说明",
+    "title": "标签简短介绍",
     "variableName": "tagsdescription",
     "inputFieldHeight": 110,
-    "exampleText": "JSON 格式"
+    "exampleText": "需要使用特定的 JSON 格式。有关该功能详情，请访问 https://dwz.cn/X5CCdpvF。"
   },
   {
     "title": "自定义样式",
