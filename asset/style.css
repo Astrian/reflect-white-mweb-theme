@@ -76,7 +76,8 @@ body {
   margin-bottom: 8px;
 }
 .article.huge .meta a {
-  color: rgb(13, 125, 153);
+  color: rgb(130, 155, 161);
+  margin-right: 8px;
   text-decoration: underline;
 }
 .article.huge .tags {
