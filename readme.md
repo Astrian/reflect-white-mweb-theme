@@ -32,24 +32,29 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 所有配置都可以在 MWeb 中完成。
 
 ### 网站基础配置
+以下设置除另做标注外，都为非必填。
+
 ![MWeb 静态博客设置](https://i.imgur.com/FeADjIy.png)
 
-- 网站名称：访客访问你的网站时，主题显示的网站名称。
-- 网站网址：请携带 `http://` 或 `https://`，就是你的网站域名。
-- 每页显示文章数：顾名思义，不做过多解释。建议使用奇数，以获得最佳体验。
+- 网站名称（必填）：访客访问你的网站时，主题显示的网站名称。
+- 网站网址（必填）：请携带 `http://` 或 `https://`，就是你的网站域名。
+- 每页显示文章数（必填）：顾名思义，不做过多解释。建议使用奇数，以获得最佳体验。
 - 网站描述：每页底部 footer 中字号最大的 slogan。
 - 评论和分享代码：粘贴社会化评论工具的代码，会应用于文章页面底部。
 - 网站其他代码：可以插入需要在 `<head>` 部分插入的代码。
 
 ### 网站扩展配置
-![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/D2wpgqq.png)
+以下设置皆为非必填。
+
+![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/TPm05SR.png)
 
 - 你的笔名：会应用于 RSS 输出。
+- Twitter 用户名：当你的文章被分享至 Twitter 时，文章卡片上需要标注哪一个 Twitter 用户？填写 Twitter 的用户名（username）而不是显示名。
 - 脚注信息：会应用于每页底部的小字体脚注。
 - Favicon 图标：访客打开你的网站时，浏览器会将其标志于网页标签页图标。可以使用 PNG 和 ICO 格式的图片。
 - 你的 Like.co 用户名：如果你有 [Like.co](https://like.co/in) 的创作者帐户，可在此填入你的 Liker ID。填入后，每篇文章底部将会显示你的 Liker Widget，当读者注册后为你的文章点赞，你将可获得实质性收入。
-
-![Like Widget 效果示例](https://i.imgur.com/aWYyVbW.png)
+- 标签简短介绍：在文章标签页面，为标签加注一段简短的介绍。[详情...](https://github.com/Astrian/reflect-white-mweb-theme/blob/master/tagdes-info.md)
+- 自定义样式：为博客设定更个性化的样式（高级）。
 
 ### 网站菜单设置
 ![MWeb 偏好设置的「扩展」页面](https://i.imgur.com/ajxmEnT.png)
@@ -63,7 +68,3 @@ git clone https://github.com/Astrian/reflect-white-mweb-theme
 
 - 次要标题：会在文章详情页和列表页的文章标题之下显示，帮助读者快速了解文章的主旨。相当于微信公众号中的「摘要」一栏。
 - 题图：会在文章详情页和列表页显示。**可以使用 MWeb 提供的相对路径**，也可以使用网络图片或 CDN 图片。
-
-## 未来更新计划
-- [x] 优化移动设备使用
-- [ ] 支持 AMP

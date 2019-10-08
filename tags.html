@@ -1,0 +1,29 @@
+<div class="container" id="tags">
+  <div class="row">
+    <div class="col-md-4 tagmeta">
+      <div class="tagpagetitle">文章标签</div>
+      <div class="tagname">#{{currentTag.name}}</div>
+      <div class="tagdescription" v-if="descriptions['{{currentTag.name}}']">${descriptions['{{currentTag.name}}']}</div>
+    </div>
+    <div class="col-md-8 posts">
+      {% for p in posts %}
+        <a href="{{p.url}}"><div class="post">
+          <div class="featimg" style="background-image: url('{% if p.ext_featureimg.length %}{{p.ext_featureimg}}{% else %}asset/defaultfeaimg.jpg{% /if %}')"></div>
+          <div class="postcontent">
+            <div class="title">{{p.title}}</div>
+            <div class="subtitle">{{p.ext_subtitle}}</div>
+          </div>
+        </div></a>
+      {% /for %}
+    </div>
+  </div>
+</div>
+<script>
+  let tags = new Vue({
+    el: '#tags',
+    data: {
+      descriptions: JSON.parse('{{ ext_tagsdescription }}')
+    },
+    delimiters: ['${', '}']
+  })
+</script>

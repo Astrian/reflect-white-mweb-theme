@@ -11,13 +11,14 @@
       {{ siteName }}
       {% /if %}
     </title>
+    <meta name="keywords" content="{% for tag in post.tags %}{{tag.name}}, {% /for %}{{siteName}}" />
     {% if posts.length %}
     {% else %}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@Astrian_Zheng" />
+      {% if ext_twitter %}<meta name="twitter:creator" content="@{{ext_twitter}}" />{% /if %}
       <meta property="og:url" content="{{siteURL}}{{ post.url }}" />
       <meta property="og:title" content="{{post.title}}" />
-      {% if p.ext_subtitle.length %}
+      {% if post.ext_subtitle.length %}
         <meta property="og:description" content="{{post.ext_subtitle}}" />
         <meta name="description" content="{{post.ext_subtitle}}" />
       {% else %}
@@ -25,8 +26,8 @@
       {% /if %}
       {% if post.ext_featureimg.length %}
         <meta property="og:image" content="{{post.ext_featureimg}}" />
-        <meta name="twitter:image" content="{{post.ext_featureimg}}">
-        {% /if %}
+        <meta name="twitter:image" content="{{post.ext_featureimg}}" />
+      {% /if %}
       <meta property="og:site_name" content="{{ siteName }}" />
     {% /if %}
     {% if ext_favicon.length %}

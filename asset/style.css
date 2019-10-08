@@ -69,10 +69,16 @@ body {
   font-size: 18px;
   line-height: 30px;
 }
-.article.huge .time {
+.article.huge .meta {
   font-size: 14px;
-  color: rgba(20, 102, 121, 0.5);
+  color: rgb(130, 155, 161);
   padding-top: 15px;
+  margin-bottom: 8px;
+}
+.article.huge .meta a {
+  color: rgb(130, 155, 161);
+  margin-right: 8px;
+  text-decoration: underline;
 }
 .article.huge .tags {
   margin-bottom: 5px;
@@ -237,6 +243,9 @@ span.smallcaps {
   padding-top: 30px;
   font-size: 16px;
 }
+#page a:hover {
+  text-decoration: none;
+}
 
 .archives .yeartitle {
   margin-top: 32px;
@@ -250,6 +259,56 @@ span.smallcaps {
 .archives article a:hover {
   color: #042f39;
   text-decoration: none;
+}
+
+#tags .tagmeta {
+  text-align: right;
+}
+#tags .tagmeta .tagname {
+  font-size: 32px;
+  color: #042f39;
+}
+#tags .tagmeta .tagdescription {
+  margin-top: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+#tags .tagmeta .tagpagetitle {
+  color: gray;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+#tags .posts a {
+  text-decoration: none;
+}
+#tags .posts a .post {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#tags .posts a:last-child .post {
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+#tags .posts .post .featimg {
+  width: 200px;
+  margin-right: 8px;
+  height: 112.5px;
+  background-size: cover;
+  background-position: center;
+}
+#tags .posts .post .postcontent {
+  flex: 1;
+}
+#tags .posts .post .postcontent .title {
+  font-size: 20px;
+  color: #042f39;
+  margin-bottom: 4px;
+}
+#tags .posts .post .postcontent .subtitle {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 /* Mobile devices-friendly styles */
@@ -333,6 +392,25 @@ span.smallcaps {
   #likecoinarea {
     font-size: 14px;
   }
+
+  #tags .posts .post {
+    flex-direction: row-reverse;
+  }
+  #tags .tagmeta {
+    text-align: left;
+    margin-bottom: 32px;
+    margin-top: 16px;
+  }
+  #tags .posts .post .featimg {
+    width: 160px;
+    margin-right: 8px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+  }
+  #tags .tagmeta .tagdescription {
+    margin-top: 6px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -395,9 +473,30 @@ span.smallcaps {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: underline;
   }
+  #page h1.title {
+    color: #c8dce0;
+  }
+  #page a, #page a:hover {
+    color: #c8dce0;
+  }
   @media (max-width: 767.98px) {
     .article.normal {
       border-top: 0.5px solid rgba(255,255,255,0.06);
     }
+  }
+  #tags .tagmeta .tagpagetitle {
+    color: rgb(206, 206, 206);
+  }
+  #tags .tagmeta .tagname, #tags .posts a .post .postcontent .title {
+    color: #c8dce0;
+  }
+  #tags .posts a .post .postcontent .subtitle {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #tags .posts a .post {
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+  }
+  #tags .tagmeta .tagdescription {
+    color: rgba(255, 255, 255, 0.8);
   }
 }
