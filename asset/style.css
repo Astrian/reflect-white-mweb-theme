@@ -69,10 +69,15 @@ body {
   font-size: 18px;
   line-height: 30px;
 }
-.article.huge .time {
+.article.huge .meta {
   font-size: 14px;
-  color: rgba(20, 102, 121, 0.5);
+  color: rgb(130, 155, 161);
   padding-top: 15px;
+  margin-bottom: 8px;
+}
+.article.huge .meta a {
+  color: rgb(13, 125, 153);
+  text-decoration: underline;
 }
 .article.huge .tags {
   margin-bottom: 5px;
