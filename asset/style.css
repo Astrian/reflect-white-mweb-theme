@@ -394,8 +394,8 @@ span.smallcaps {
   }
   #tags .tagmeta {
     text-align: left;
-    margin-bottom: 16px;
-    margin-top: 8px;
+    margin-bottom: 32px;
+    margin-top: 16px;
   }
   #tags .posts .post .featimg {
     width: 160px;
