@@ -10,7 +10,7 @@
               <div class="col-md-10 post">
                 <div class="headline"><a href="{{ p.url }}">{{ p.title }}</a></div>
                 {% if p.ext_subtitle.length %}<div class="subtitle">{{p.ext_subtitle}}</div>{% /if %}
-                <div class="time">$[timeformat('{{p.dateGTM}}')]</div>
+                <div class="meta"><span class="time">$[timeformat('{{p.dateGTM}}')]</span></div>
                 <div class="body">
                     {{ p.desContent }}
                 </div>

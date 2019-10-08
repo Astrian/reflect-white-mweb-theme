@@ -260,6 +260,43 @@ span.smallcaps {
   text-decoration: none;
 }
 
+#tags .tagname {
+  font-size: 32px;
+  text-align: right;
+}
+#tags .posts a {
+  text-decoration: none;
+}
+#tags .posts a .post {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#tags .posts a:last-child .post {
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+#tags .posts .post .featimg {
+  width: 200px;
+  margin-right: 8px;
+  height: 112.5px;
+  background-size: cover;
+  background-position: center;
+}
+#tags .posts .post .postcontent {
+  flex: 1;
+}
+#tags .posts .post .postcontent .title {
+  font-size: 20px;
+  color: #042f39;
+  margin-bottom: 4px;
+}
+#tags .posts .post .postcontent .subtitle {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
 /* Mobile devices-friendly styles */
 
 @media (max-width: 767.98px) {
