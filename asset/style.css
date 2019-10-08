@@ -402,11 +402,18 @@ span.smallcaps {
     margin-top: 16px;
   }
   #tags .posts .post .featimg {
-    width: 160px;
-    margin-right: 8px;
     height: 90px;
+    width: 120px;
+    margin-left: 8px;
+    margin-right: 0px;
     background-size: cover;
     background-position: center;
+  }
+  #tags .posts .post .postcontent .title {
+    font-size: 16px;
+  }
+  #tags .posts .post .postcontent .subtitle {
+    font-size: 14px;
   }
   #tags .tagmeta .tagdescription {
     margin-top: 6px;
