@@ -402,9 +402,9 @@ span.smallcaps {
     margin-top: 16px;
   }
   #tags .posts .post .featimg {
-    width: 160px;
-    margin-right: 8px;
     height: 90px;
+    width: 120px;
+    margin-right: 8px;
     background-size: cover;
     background-position: center;
   }
