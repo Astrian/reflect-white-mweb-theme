@@ -387,10 +387,21 @@ span.smallcaps {
   #likecoinarea {
     font-size: 14px;
   }
+
+  #tags .posts .post {
+    flex-direction: row-reverse;
+  }
   #tags .tagmeta {
     text-align: left;
     margin-bottom: 16px;
     margin-top: 8px;
+  }
+  #tags .posts .post .featimg {
+    width: 160px;
+    margin-right: 8px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
   }
 }
 
