@@ -268,6 +268,10 @@ span.smallcaps {
   font-size: 32px;
   color: #042f39;
 }
+#tags .tagmeta .tagdescription {
+  margin-top: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
 #tags .tagmeta .tagpagetitle {
   color: gray;
   font-size: 14px;
@@ -404,6 +408,9 @@ span.smallcaps {
     background-size: cover;
     background-position: center;
   }
+  #tags .tagmeta .tagdescription {
+    margin-top: 6px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -488,5 +495,8 @@ span.smallcaps {
   }
   #tags .posts a .post {
     border-bottom: 1px solid rgba(255,255,255,0.4);
+  }
+  #tags .tagmeta .tagdescription {
+    color: rgba(255, 255, 255, 0.8);
   }
 }
