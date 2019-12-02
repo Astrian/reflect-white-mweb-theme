@@ -163,6 +163,19 @@ a:hover.item{
   font-size: 23px;
   line-height: 40px;
 }
+.article.huge .post h2{
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.article.huge .post .body pre{
+  background-color: #242424;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  border: #042f39 1px solid;
+  box-shadow: inset 0px 1px 5px #000;
+}
 
 .pagenavi {
   display: flex;
@@ -355,6 +368,11 @@ span.smallcaps {
   .article.huge .post blockquote p {
     font-size: 20px;
     line-height: 30px;
+  }
+  .article.huge .post h2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
   }
 
   .article.normal {
