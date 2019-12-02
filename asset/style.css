@@ -163,6 +163,16 @@ a:hover.item{
   font-size: 23px;
   line-height: 40px;
 }
+.article.huge .post h2{
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.article.huge .post .body pre{
+  background-color: #042f39;
+  color: white;
+  border-radius: 4px;
+}
 
 .pagenavi {
   display: flex;
