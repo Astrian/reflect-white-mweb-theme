@@ -523,6 +523,9 @@ span.smallcaps {
   .article.huge .post blockquote p{
     color: #308396;
   }
+  .article.huge .post .body ul li, .article.huge .post .body ol li {
+    color: rgb(197, 197, 197);
+  }
   #likecoinarea a, #likecoinarea a:hover {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: underline;
