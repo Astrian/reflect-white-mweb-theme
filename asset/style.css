@@ -156,12 +156,12 @@ a:hover.item{
   text-decoration: none;
 }
 .article.huge .post blockquote{
-  padding-left: 32px;
-  color: #146679;
+  padding-left: 14px;
+  margin-left: 2px;
+  border-left: solid 3px rgb(20, 102, 121);
 }
 .article.huge .post blockquote p {
-  font-size: 23px;
-  line-height: 40px;
+  color: rgba(0,0,0,0.6);
 }
 .article.huge .post h2{
   margin-top: 45px;
@@ -374,8 +374,6 @@ span.smallcaps {
     line-height: 28px;
   }
   .article.huge .post blockquote p {
-    font-size: 20px;
-    line-height: 30px;
   }
   .article.huge .post h2{
     margin-top: 25px;
