@@ -36,6 +36,12 @@
     "exampleText": "需要使用特定的 JSON 格式。有关该功能详情，请访问 https://dwz.cn/X5CCdpvF。"
   },
   {
+    "title": "评论工具代码",
+    "variableName": "commenttool",
+    "inputFieldHeight": 110,
+    "exampleText": "在此处粘贴来自 Disqus、来必力等网站的评论框代码，即可在文章下方显示由对应服务托管的文章评论。"
+  },
+  {
     "title": "自定义样式",
     "variableName": "customstyle",
     "inputFieldHeight": 110,
