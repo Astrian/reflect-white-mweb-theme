@@ -156,17 +156,25 @@ a:hover.item{
   text-decoration: none;
 }
 .article.huge .post blockquote{
-  padding-left: 32px;
-  color: #146679;
+  padding-left: 14px;
+  margin-left: 2px;
+  border-left: solid 3px rgb(20, 102, 121);
 }
 .article.huge .post blockquote p {
-  font-size: 23px;
-  line-height: 40px;
+  color: rgba(0,0,0,0.6);
 }
 .article.huge .post h2{
   margin-top: 45px;
   margin-bottom: 20px;
   font-weight: 500;
+  font-size: 30px;
+}
+.article.huge .post h3{
+  margin-top: 30px;
+  font-size: 24px;
+}
+.article.huge .post h4{
+  font-size: 22px;
 }
 .article.huge .post .body pre{
   background-color: #242424;
@@ -175,6 +183,14 @@ a:hover.item{
   padding: 8px;
   border: #042f39 1px solid;
   box-shadow: inset 0px 1px 5px #000;
+}
+.article.huge .post .body ul li, .article.huge .post .body ol li {
+  font-size: 18px;
+  margin-top: 8px;
+}
+.article.huge .post .body ul, .article.huge .post .body ol {
+  padding-left: 28px;
+  margin-left: 3px;
 }
 
 .pagenavi {
@@ -365,14 +381,27 @@ span.smallcaps {
     font-size: 16px;
     line-height: 28px;
   }
-  .article.huge .post blockquote p {
-    font-size: 20px;
-    line-height: 30px;
-  }
   .article.huge .post h2{
     margin-top: 25px;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 25px;
+  }
+  .article.huge .post h3{
+    margin-top: 28px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .article.huge .post h4{
+    font-size: 20px;
+  }
+  .article.huge .post .body ul, .article.huge .post .body ol {
+    padding-left: 14px;
+    margin-left: 3px;
+  }
+  .article.huge .post .body ul li, .article.huge .post .body ol li {
+    font-size: 16px;
+    line-height: 28px;
   }
 
   .article.normal {

@@ -24,11 +24,11 @@
                 <iframe data-v-b66e9a5a="" style="height: 230px;" src="https://button.like.co/in/embed/{{ext_likecoinusername}}/button?referrer={{ siteURL }}{{ post.url }}" frameborder="0" class="lc-margin-top-64 lc-margin-bottom-32 lc-mobile"></iframe>
               </div>
             {% /if %}
-            {% if commentAndShareCode.length %}
+            {% if ext_commenttool.length %}
               <hr>
               <div class="comment">
                   <h1>评论</h1>
-                  {{ commentAndShareCode }}
+                  {{ ext_commenttool }}
               </div>
             {% /if %}
           </div>
