@@ -184,6 +184,14 @@ a:hover.item{
   border: #042f39 1px solid;
   box-shadow: inset 0px 1px 5px #000;
 }
+.article.huge .post .body ul li, .article.huge .post .body ol li {
+  font-size: 18px;
+  margin-top: 8px;
+}
+.article.huge .post .body ul, .article.huge .post .body ol {
+  padding-left: 28px;
+  margin-left: 3px;
+}
 
 .pagenavi {
   display: flex;
@@ -373,8 +381,6 @@ span.smallcaps {
     font-size: 16px;
     line-height: 28px;
   }
-  .article.huge .post blockquote p {
-  }
   .article.huge .post h2{
     margin-top: 25px;
     margin-bottom: 10px;
@@ -388,6 +394,14 @@ span.smallcaps {
   }
   .article.huge .post h4{
     font-size: 20px;
+  }
+  .article.huge .post .body ul, .article.huge .post .body ol {
+    padding-left: 14px;
+    margin-left: 3px;
+  }
+  .article.huge .post .body ul li, .article.huge .post .body ol li {
+    font-size: 16px;
+    line-height: 28px;
   }
 
   .article.normal {
