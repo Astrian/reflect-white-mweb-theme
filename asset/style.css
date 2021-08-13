@@ -231,6 +231,8 @@ body {
 .article .post hr {
   width: 30%;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .article.normal {
