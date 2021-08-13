@@ -1,0 +1,865 @@
+body {
+  transition: all 0.25s;
+  font-family: 'Avenir', 'Noto Sans CJK SC', sans-serif;
+}
+
+.head {
+  padding-top: 60px;
+  margin-bottom: 40px;
+
+  .blogname {
+    font-size: 60px;
+    color: #1a1a1a;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      padding: 0px 20px 0px 0px;
+      margin: 10px 0px 0px 0px;
+      font-size: 20px;
+      text-transform: uppercase;
+
+      a {
+        color: rgba(0, 0, 50, 0.3);
+        letter-spacing: 5px;
+
+        &:hover {
+          text-decoration: none;
+          color: rgba(0, 0, 50, 0.6);
+        }
+      }
+    }
+  }
+}
+
+.article.huge {
+  padding-bottom: 40px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .featureimg {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    margin-top: -130px;
+  }
+
+  .headline {
+    font-size: 35px;
+
+    a {
+      color: #042f39;
+
+      &:hover {
+        color: #042f39;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .subtitle {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .main {
+    transition: all 0.25s;
+    background-color: white;
+  }
+
+  .post {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    blockquote {
+      padding-left: 14px;
+      margin-left: 2px;
+      border-left: solid 3px rgb(20, 102, 121);
+
+      p {
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    h2 {
+      margin-top: 45px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 30px;
+    }
+
+    h3 {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 22px;
+    }
+
+    .body {
+      pre {
+        background-color: #242424;
+        color: white;
+        border-radius: 4px;
+        padding: 8px;
+        border: #042f39 1px solid;
+        box-shadow: inset 0px 1px 5px #000;
+      }
+
+      ul {
+        li {
+          font-size: 18px;
+          margin-top: 8px;
+        }
+
+        padding-left: 28px;
+        margin-left: 3px;
+      }
+
+      ol {
+        li {
+          font-size: 18px;
+          margin-top: 8px;
+        }
+
+        padding-left: 28px;
+        margin-left: 3px;
+      }
+    }
+  }
+
+  .meta {
+    font-size: 14px;
+    color: rgb(130, 155, 161);
+    padding-top: 15px;
+    margin-bottom: 8px;
+
+    a {
+      color: rgb(130, 155, 161);
+      margin-right: 8px;
+      text-decoration: underline;
+    }
+  }
+
+  .tags {
+    margin-bottom: 5px;
+
+    .item {
+      margin-right: 5px;
+
+      a {
+        font-size: 14px;
+        color: rgba(20, 102, 121, 0.5);
+
+        &:hover {
+          color: rgba(20, 102, 121, 0.5);
+        }
+      }
+    }
+  }
+
+  .body {
+    text-align: justify;
+
+    a {
+      color: rgb(25, 94, 114);
+    }
+
+    sup {
+      a {
+        color: white;
+        background-color: rgb(25, 94, 114);
+        margin: 0px 4px 0px 2px;
+        padding: 0px 4px;
+        border-radius: 2px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .continue {
+    color: white;
+    background-color: #146679;
+    padding: 8px 20px;
+  }
+
+  figure {
+    figcaption {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.4);
+      padding-top: 4px;
+      width: 65%;
+      margin-left: 30px;
+    }
+  }
+}
+
+.article {
+  figure {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .post {
+    hr {
+      width: 30%;
+      border: 0.5px solid rgba(0, 0, 0, 0.1);
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.article.normal {
+  .featureimg {
+    height: 280px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+a.item {
+  .article.normal {
+    .headline {
+      font-size: 28px;
+      color: #042f39;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+a {
+  &:hover.item {
+    text-decoration: none;
+  }
+}
+
+.pagenavi {
+  display: flex;
+  justify-content: center;
+
+  .item {
+    color: rgba(0, 0, 50, 0.3);
+    letter-spacing: 5px;
+
+    a {
+      color: rgba(0, 0, 50, 0.5);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.archives {
+  h1 {
+    small {
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .yeartitle {
+    margin-top: 32px;
+  }
+
+  article {
+    padding: 4px 0px;
+
+    a {
+      color: #042f39;
+
+      &:hover {
+        color: #042f39;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.otherposts {
+  display: flex;
+}
+
+#likecoinarea {
+  text-align: center;
+  color: gray;
+
+  a {
+    color: gray;
+    text-decoration: underline;
+
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+.comment {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  .slogan {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+  }
+
+  .meta {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
+  }
+
+  .colorScheme {
+    cursor: default;
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+  border: none;
+}
+
+span.smallcaps {
+  font-variant: all-small-caps;
+}
+
+#page {
+  margin: 40px 0px;
+
+  h1.title {
+    font-size: 35px;
+    color: #042f39;
+    font-weight: 300;
+  }
+
+  .content {
+    padding-top: 30px;
+    font-size: 16px;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#tags {
+  .tagmeta {
+    text-align: right;
+
+    .tagname {
+      font-size: 32px;
+      color: #042f39;
+      color: #c8dce0;
+    }
+
+    .tagdescription {
+      margin-top: 12px;
+      color: rgba(0, 0, 0, 0.8);
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .tagpagetitle {
+      color: gray;
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-weight: 100;
+      color: rgb(206, 206, 206);
+    }
+  }
+
+  .posts {
+    a {
+      text-decoration: none;
+
+      .post {
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+        .postcontent {
+          .title {
+            color: #c8dce0;
+          }
+
+          .subtitle {
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+
+      &:last-child {
+        .post {
+          padding-bottom: 0px;
+          border-bottom: none;
+        }
+      }
+    }
+
+    .post {
+      .featimg {
+        width: 200px;
+        margin-right: 8px;
+        height: 112.5px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .postcontent {
+        flex: 1;
+
+        .title {
+          font-size: 20px;
+          color: #042f39;
+          margin-bottom: 4px;
+        }
+
+        .subtitle {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .head {
+    .blogname {
+      font-size: 40px;
+    }
+
+    nav {
+      .item {
+        font-size: 18px;
+        text-transform: uppercase;
+
+        a {
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+
+  .article.huge {
+    .featureimg {
+      height: 250px;
+      margin: 0px -15px;
+    }
+
+    .content {
+      margin-top: 0px;
+    }
+
+    .headline {
+      font-size: 25px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+    }
+
+    figure {
+      figcaption {
+        margin-left: 26px;
+        font-size: 14px;
+        padding-top: 2px;
+      }
+    }
+
+    .post {
+      p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+
+      h2 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 25px;
+      }
+
+      h3 {
+        margin-top: 28px;
+        font-size: 22px;
+        font-weight: 400;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+
+      .body {
+        ul {
+          padding-left: 14px;
+          margin-left: 3px;
+
+          li {
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+
+        ol {
+          padding-left: 14px;
+          margin-left: 3px;
+
+          li {
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .article {
+    h2 {
+      font-size: 22px;
+    }
+  }
+
+  figure {
+    margin: 0px -15px;
+  }
+
+  .article.normal {
+    flex-direction: row-reverse;
+    text-align: left;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.06);
+    border-width: 30%;
+    padding: 10px 0px;
+
+    .featureimg {
+      height: 90px;
+      width: 120px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 5px;
+      flex: 1;
+    }
+
+    .articleinfo {
+      flex: 2;
+      margin-right: 12px;
+    }
+  }
+
+  a.item {
+    .article.normal {
+      .headline {
+        font-size: 16px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+        padding-top: 6px;
+      }
+    }
+  }
+
+  .otherposts {
+    .col-md-6 {
+      &:first-child {
+        .normal {
+          border-top: none;
+        }
+      }
+    }
+  }
+
+  #likecoinarea {
+    font-size: 14px;
+  }
+
+  #tags {
+    .posts {
+      .post {
+        flex-direction: row-reverse;
+
+        .featimg {
+          height: 90px;
+          width: 120px;
+          margin-left: 8px;
+          margin-right: 0px;
+          background-size: cover;
+          background-position: center;
+        }
+
+        .postcontent {
+          .title {
+            font-size: 16px;
+          }
+
+          .subtitle {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .tagmeta {
+      text-align: left;
+      margin-bottom: 32px;
+      margin-top: 16px;
+
+      .tagdescription {
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+.darkscheme {
+  transition: all 0.25s;
+  background-color: rgb(24, 31, 32);
+  color: white;
+
+  .head {
+    .blogname {
+      color: white;
+    }
+
+    nav {
+      .item {
+        a {
+          color: rgba(255, 255, 255, 0.3);
+
+          &:hover {
+            color: rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+  .article.huge {
+    .subtitle {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .main {
+      p {
+        color: rgb(197, 197, 197);
+      }
+
+      h2 {
+        color: rgb(226, 226, 226);
+      }
+
+      h3 {
+        color: rgb(226, 226, 226);
+      }
+
+      h4 {
+        color: rgb(226, 226, 226);
+      }
+
+      h5 {
+        color: rgb(226, 226, 226);
+      }
+
+      h6 {
+        color: rgb(226, 226, 226);
+      }
+
+      background-color: rgb(24, 31, 32);
+    }
+
+    .headline {
+      a {
+        color: #c8dce0;
+
+        &:hover {
+          color: #c8dce0;
+        }
+      }
+    }
+
+    .body {
+      a {
+        color: rgb(64, 180, 212);
+
+        &:hover {
+          color: rgb(64, 180, 212);
+        }
+      }
+    }
+
+    figure {
+      figcaption {
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    .time {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .post {
+      blockquote {
+        p {
+          color: #308396;
+        }
+      }
+
+      .body {
+        ul {
+          li {
+            color: rgb(197, 197, 197);
+          }
+        }
+
+        ol {
+          li {
+            color: rgb(197, 197, 197);
+          }
+        }
+      }
+    }
+  }
+
+  a.item {
+    .article.normal {
+      .subtitle {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .headline {
+        color: #c8dce0;
+      }
+    }
+
+    &:hover {
+      .article.normal {
+        .headline {
+          color: #c8dce0;
+        }
+      }
+    }
+  }
+
+  .pagenavi {
+    .item {
+      a {
+        color: rgba(255, 255, 255, 0.3);
+
+        &:hover {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+
+      color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  hr {
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .article {
+    .post {
+      hr {
+        border: 0.5px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  .footer {
+    .slogan {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .meta {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.45);
+    }
+  }
+
+  #likecoinarea {
+    a {
+      color: rgba(255, 255, 255, 0.4);
+      text-decoration: underline;
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.4);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #page {
+    h1.title {
+      color: #c8dce0;
+    }
+
+    a {
+      color: #c8dce0;
+
+      &:hover {
+        color: #c8dce0;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .article.normal {
+      border-top: 0.5px solid rgba(255, 255, 255, 0.06);
+    }
+  }
+}
