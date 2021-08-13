@@ -6,24 +6,32 @@ body {
   padding-top: 60px;
   margin-bottom: 40px;
 }
+
 .head .blogname {
   font-size: 60px;
   color: #1a1a1a;
 }
-.head nav{
+
+.head nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .head nav .item {
   padding: 0px 20px 0px 0px;
   margin: 10px 0px 0px 0px;
   font-size: 20px;
   text-transform: uppercase;
 }
+
 .head nav .item a {
   color: rgba(0, 0, 50, 0.3);
   letter-spacing: 5px;
 }
+
 .head nav .item a:hover {
   text-decoration: none;
   color: rgba(0, 0, 50, 0.6);
@@ -32,103 +40,205 @@ body {
 .article.huge {
   padding-bottom: 40px;
 }
+
 .article.huge img {
   max-width: 100%;
 }
+
 .article.huge .featureimg {
   height: 500px;
   background-size: cover;
   background-position: center;
 }
+
 .article.huge .content {
   margin-top: -130px;
 }
+
 .article.huge .headline {
   font-size: 35px;
 }
+
 .article.huge .headline a {
   color: #042f39;
 }
+
 .article.huge .headline a:hover {
   color: #042f39;
   text-decoration: none;
 }
+
 .article.huge .subtitle {
   font-size: 24px;
   color: rgba(0, 0, 0, 0.4);
 }
+
 .article.huge .main {
   background-color: white;
 }
+
 .article.huge .post {
   padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .article.huge .post p {
   font-size: 18px;
   line-height: 30px;
 }
+
+.article.huge .post blockquote {
+  padding-left: 14px;
+  margin-left: 2px;
+  border-left: solid 3px #146679;
+}
+
+.article.huge .post blockquote p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.article.huge .post h2 {
+  margin-top: 45px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.article.huge .post h3 {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.article.huge .post h4 {
+  font-size: 22px;
+}
+
+.article.huge .post .body pre {
+  background-color: #242424;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  border: #042f39 1px solid;
+  -webkit-box-shadow: inset 0px 1px 5px #000;
+          box-shadow: inset 0px 1px 5px #000;
+}
+
+.article.huge .post .body ul {
+  padding-left: 28px;
+  margin-left: 3px;
+}
+
+.article.huge .post .body ul li {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.article.huge .post .body ol {
+  padding-left: 28px;
+  margin-left: 3px;
+}
+
+.article.huge .post .body ol li {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
 .article.huge .meta {
   font-size: 14px;
-  color: rgb(130, 155, 161);
+  color: #829ba1;
   padding-top: 15px;
   margin-bottom: 8px;
 }
+
 .article.huge .meta a {
-  color: rgb(130, 155, 161);
+  color: #829ba1;
   margin-right: 8px;
   text-decoration: underline;
 }
+
 .article.huge .tags {
   margin-bottom: 5px;
 }
+
 .article.huge .tags .item {
   margin-right: 5px;
 }
+
 .article.huge .tags .item a {
   font-size: 14px;
   color: rgba(20, 102, 121, 0.5);
 }
+
 .article.huge .tags .item a:hover {
   color: rgba(20, 102, 121, 0.5);
 }
+
 .article.huge .body {
-  text-align:justify;
+  text-align: justify;
 }
+
 .article.huge .body a {
-  color: rgb(25, 94, 114);
+  color: #195e72;
 }
+
+.article.huge .body sup a {
+  color: white;
+  background-color: #195e72;
+  margin: 0px 4px 0px 2px;
+  padding: 0px 4px;
+  border-radius: 2px;
+}
+
+.article.huge .body sup a:hover {
+  text-decoration: none;
+}
+
 .article.huge .continue {
   color: white;
   background-color: #146679;
   padding: 8px 20px;
 }
+
 .article.huge figure figcaption {
   font-size: 16px;
-  color: rgba(0,0,0,0.4);
+  color: rgba(0, 0, 0, 0.4);
   padding-top: 4px;
   width: 65%;
   margin-left: 30px;
 }
+
 .article figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 2rem;
 }
+
 .article .post hr {
   width: 30%;
-  border: 0.5px solid rgba(0,0,0,0.1);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
 }
-.article.huge .body sup a {
-  color: white;
-  background-color: rgb(25, 94, 114);
-  margin: 0px 4px 0px 2px;
-  padding: 0px 4px;
-  border-radius: 2px;
-}
-.article.huge .body sup a:hover {
-  text-decoration: none;
+
+.article.normal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .article.normal .featureimg {
@@ -138,72 +248,39 @@ body {
   background-position: center;
   margin-bottom: 5px;
 }
-.article.normal {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 20px;
-}
+
 a.item .article.normal .headline {
   font-size: 28px;
   color: #042f39;
 }
+
 a.item .article.normal .subtitle {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.4);
 }
-a:hover.item{
+
+a:hover.item {
   text-decoration: none;
-}
-.article.huge .post blockquote{
-  padding-left: 14px;
-  margin-left: 2px;
-  border-left: solid 3px rgb(20, 102, 121);
-}
-.article.huge .post blockquote p {
-  color: rgba(0,0,0,0.6);
-}
-.article.huge .post h2{
-  margin-top: 45px;
-  margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 30px;
-}
-.article.huge .post h3{
-  margin-top: 30px;
-  font-size: 24px;
-}
-.article.huge .post h4{
-  font-size: 22px;
-}
-.article.huge .post .body pre{
-  background-color: #242424;
-  color: white;
-  border-radius: 4px;
-  padding: 8px;
-  border: #042f39 1px solid;
-  box-shadow: inset 0px 1px 5px #000;
-}
-.article.huge .post .body ul li, .article.huge .post .body ol li {
-  font-size: 18px;
-  margin-top: 8px;
-}
-.article.huge .post .body ul, .article.huge .post .body ol {
-  padding-left: 28px;
-  margin-left: 3px;
 }
 
 .pagenavi {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .pagenavi .item {
   color: rgba(0, 0, 50, 0.3);
   letter-spacing: 5px;
 }
+
 .pagenavi .item a {
   color: rgba(0, 0, 50, 0.5);
 }
+
 .pagenavi .item a:hover {
   text-decoration: none;
 }
@@ -211,9 +288,28 @@ a:hover.item{
 .archives h1 small {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
-} 
+}
+
+.archives .yeartitle {
+  margin-top: 32px;
+}
+
+.archives article {
+  padding: 4px 0px;
+}
+
+.archives article a {
+  color: #042f39;
+}
+
+.archives article a:hover {
+  color: #042f39;
+  text-decoration: none;
+}
 
 .otherposts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -221,10 +317,12 @@ a:hover.item{
   text-align: center;
   color: gray;
 }
+
 #likecoinarea a {
   color: gray;
   text-decoration: underline;
 }
+
 #likecoinarea a:hover {
   color: gray;
 }
@@ -237,20 +335,24 @@ a:hover.item{
   padding-top: 20px;
   padding-bottom: 40px;
 }
+
 .footer .slogan {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
   padding-bottom: 10px;
 }
+
 .footer .meta {
   color: rgba(0, 0, 0, 0.3);
   font-size: 14px;
 }
+
 .footer a {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
 }
+
 iframe {
   width: 100%;
   border: none;
@@ -263,63 +365,73 @@ span.smallcaps {
 #page {
   margin: 40px 0px;
 }
+
 #page h1.title {
   font-size: 35px;
   color: #042f39;
   font-weight: 300;
 }
-#page .content{
+
+#page .content {
   padding-top: 30px;
   font-size: 16px;
 }
-#page a:hover {
-  text-decoration: none;
-}
 
-.archives .yeartitle {
-  margin-top: 32px;
-}
-.archives article {
-  padding: 4px 0px;
-}
-.archives article a {
-  color: #042f39;
-}
-.archives article a:hover {
-  color: #042f39;
+#page a:hover {
   text-decoration: none;
 }
 
 #tags .tagmeta {
   text-align: right;
 }
+
 #tags .tagmeta .tagname {
   font-size: 32px;
   color: #042f39;
+  color: #c8dce0;
 }
+
 #tags .tagmeta .tagdescription {
   margin-top: 12px;
   color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
+
 #tags .tagmeta .tagpagetitle {
   color: gray;
   font-size: 14px;
   letter-spacing: 3px;
   font-weight: 100;
+  color: #cecece;
 }
+
 #tags .posts a {
   text-decoration: none;
 }
+
 #tags .posts a .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 8px;
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
+
+#tags .posts a .post .postcontent .title {
+  color: #c8dce0;
+}
+
+#tags .posts a .post .postcontent .subtitle {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 #tags .posts a:last-child .post {
   padding-bottom: 0px;
   border-bottom: none;
 }
+
 #tags .posts .post .featimg {
   width: 200px;
   margin-right: 8px;
@@ -327,20 +439,23 @@ span.smallcaps {
   background-size: cover;
   background-position: center;
 }
+
 #tags .posts .post .postcontent {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
+
 #tags .posts .post .postcontent .title {
   font-size: 20px;
   color: #042f39;
   margin-bottom: 4px;
 }
+
 #tags .posts .post .postcontent .subtitle {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.4);
 }
-
-/* Mobile devices-friendly styles */
 
 @media (max-width: 767.98px) {
   .head .blogname {
@@ -366,12 +481,6 @@ span.smallcaps {
   .article.huge .subtitle {
     font-size: 20px;
   }
-  .article h2 {
-    font-size: 22px;
-  }
-  figure {
-    margin: 0px -15px;
-  }
   .article.huge figure figcaption {
     margin-left: 26px;
     font-size: 14px;
@@ -381,32 +490,51 @@ span.smallcaps {
     font-size: 16px;
     line-height: 28px;
   }
-  .article.huge .post h2{
+  .article.huge .post h2 {
     margin-top: 25px;
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 25px;
   }
-  .article.huge .post h3{
+  .article.huge .post h3 {
     margin-top: 28px;
     font-size: 22px;
     font-weight: 400;
   }
-  .article.huge .post h4{
+  .article.huge .post h4 {
     font-size: 20px;
   }
-  .article.huge .post .body ul, .article.huge .post .body ol {
+  .article.huge .post .body ul {
     padding-left: 14px;
     margin-left: 3px;
   }
-  .article.huge .post .body ul li, .article.huge .post .body ol li {
+  .article.huge .post .body ul li {
     font-size: 16px;
     line-height: 28px;
   }
-
+  .article.huge .post .body ol {
+    padding-left: 14px;
+    margin-left: 3px;
+  }
+  .article.huge .post .body ol li {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .article h2 {
+    font-size: 22px;
+  }
+  figure {
+    margin: 0px -15px;
+  }
   .article.normal {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     text-align: left;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.06);
+    border-width: 30%;
+    padding: 10px 0px;
   }
   .article.normal .featureimg {
     height: 90px;
@@ -414,10 +542,14 @@ span.smallcaps {
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   .article.normal .articleinfo {
-    flex: 2;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
     margin-right: 12px;
   }
   a.item .article.normal .headline {
@@ -428,25 +560,17 @@ span.smallcaps {
     color: rgba(0, 0, 0, 0.4);
     padding-top: 6px;
   }
-  .article.normal {
-    border-top: 0.5px solid rgba(0,0,0,0.06);
-    border-width: 30%;
-    padding: 10px 0px;
-  }
   .otherposts .col-md-6:first-child .normal {
     border-top: none;
   }
   #likecoinarea {
     font-size: 14px;
   }
-
   #tags .posts .post {
-    flex-direction: row-reverse;
-  }
-  #tags .tagmeta {
-    text-align: left;
-    margin-bottom: 32px;
-    margin-top: 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   #tags .posts .post .featimg {
     height: 90px;
@@ -462,6 +586,11 @@ span.smallcaps {
   #tags .posts .post .postcontent .subtitle {
     font-size: 14px;
   }
+  #tags .tagmeta {
+    text-align: left;
+    margin-bottom: 32px;
+    margin-top: 16px;
+  }
   #tags .tagmeta .tagdescription {
     margin-top: 6px;
   }
@@ -469,38 +598,53 @@ span.smallcaps {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: rgb(24, 31, 32);
+    background-color: #181f20;
     color: white;
   }
   .head .blogname {
     color: white;
   }
-  .article.huge .subtitle, a.item .article.normal .subtitle {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  .head nav .item a, .pagenavi .item a {
+  .head nav .item a {
     color: rgba(255, 255, 255, 0.3);
   }
-  .head nav .item a:hover, .pagenavi .item a:hover {
+  .head nav .item a:hover {
     color: rgba(255, 255, 255, 0.6);
   }
-  .pagenavi .item {
-    color: rgba(255, 255, 255, 0.2);
-  }
-  .article.huge .main p {
-    color: rgb(197, 197, 197);
-  }
-  .article.huge .main h2, .article.huge .main h3, .article.huge .main h4, .article.huge .main h5, .article.huge .main h6 {
-    color: rgb(226, 226, 226);
+  .article.huge .subtitle {
+    color: rgba(255, 255, 255, 0.5);
   }
   .article.huge .main {
-    background-color: rgb(24, 31, 32);
+    background-color: #181f20;
   }
-  .article.huge .headline a, .article.huge .headline a:hover, a.item .article.normal .headline, a.item:hover .article.normal .headline  {
+  .article.huge .main p {
+    color: #c5c5c5;
+  }
+  .article.huge .main h2 {
+    color: #e2e2e2;
+  }
+  .article.huge .main h3 {
+    color: #e2e2e2;
+  }
+  .article.huge .main h4 {
+    color: #e2e2e2;
+  }
+  .article.huge .main h5 {
+    color: #e2e2e2;
+  }
+  .article.huge .main h6 {
+    color: #e2e2e2;
+  }
+  .article.huge .headline a {
     color: #c8dce0;
   }
-  .article.huge .body a, .article.huge .body a:hover {
-    color: rgb(64, 180, 212);
+  .article.huge .headline a:hover {
+    color: #c8dce0;
+  }
+  .article.huge .body a {
+    color: #40b4d4;
+  }
+  .article.huge .body a:hover {
+    color: #40b4d4;
   }
   .article.huge figure figcaption {
     color: rgba(255, 255, 255, 0.4);
@@ -508,52 +652,70 @@ span.smallcaps {
   .article.huge .time {
     color: rgba(255, 255, 255, 0.4);
   }
+  .article.huge .post blockquote p {
+    color: #308396;
+  }
+  .article.huge .post .body ul li {
+    color: #c5c5c5;
+  }
+  .article.huge .post .body ol li {
+    color: #c5c5c5;
+  }
+  a.item .article.normal .subtitle {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  a.item .article.normal .headline {
+    color: #c8dce0;
+  }
+  a.item:hover .article.normal .headline {
+    color: #c8dce0;
+  }
+  .pagenavi .item {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  .pagenavi .item a {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .pagenavi .item a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
   hr {
-    border: 0.5px solid rgba(255,255,255,0.4);
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
   }
   .article .post hr {
-    border: 0.5px solid rgba(255,255,255,0.2);
+    border: 0.5px solid rgba(255, 255, 255, 0.2);
   }
   .footer .slogan {
     color: rgba(255, 255, 255, 0.6);
   }
-  .footer .meta, .footer a {
+  .footer .meta {
     color: rgba(255, 255, 255, 0.45);
   }
-  .article.huge .post blockquote p{
-    color: #308396;
+  .footer a {
+    color: rgba(255, 255, 255, 0.45);
   }
-  .article.huge .post .body ul li, .article.huge .post .body ol li {
-    color: rgb(197, 197, 197);
+  #likecoinarea a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: underline;
   }
-  #likecoinarea a, #likecoinarea a:hover {
+  #likecoinarea a:hover {
     color: rgba(255, 255, 255, 0.4);
     text-decoration: underline;
   }
   #page h1.title {
     color: #c8dce0;
   }
-  #page a, #page a:hover {
+  #page a {
     color: #c8dce0;
   }
-  @media (max-width: 767.98px) {
-    .article.normal {
-      border-top: 0.5px solid rgba(255,255,255,0.06);
-    }
-  }
-  #tags .tagmeta .tagpagetitle {
-    color: rgb(206, 206, 206);
-  }
-  #tags .tagmeta .tagname, #tags .posts a .post .postcontent .title {
+  #page a:hover {
     color: #c8dce0;
-  }
-  #tags .posts a .post .postcontent .subtitle {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  #tags .posts a .post {
-    border-bottom: 1px solid rgba(255,255,255,0.4);
-  }
-  #tags .tagmeta .tagdescription {
-    color: rgba(255, 255, 255, 0.8);
   }
 }
+
+@media (prefers-color-scheme: dark) and (max-width: 767.98px) {
+  .article.normal {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.06);
+  }
+}
+/*# sourceMappingURL=style.css.map */
