@@ -353,6 +353,14 @@ a:hover.item {
   text-decoration: underline;
 }
 
+.footer .colorScheme {
+  cursor: default;
+}
+
+.footer .colorScheme span {
+  cursor: pointer;
+}
+
 iframe {
   width: 100%;
   border: none;
@@ -596,125 +604,159 @@ span.smallcaps {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #181f20;
-    color: white;
-  }
-  .head .blogname {
-    color: white;
-  }
-  .head nav .item a {
-    color: rgba(255, 255, 255, 0.3);
-  }
-  .head nav .item a:hover {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .article.huge .subtitle {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  .article.huge .main {
-    background-color: #181f20;
-  }
-  .article.huge .main p {
-    color: #c5c5c5;
-  }
-  .article.huge .main h2 {
-    color: #e2e2e2;
-  }
-  .article.huge .main h3 {
-    color: #e2e2e2;
-  }
-  .article.huge .main h4 {
-    color: #e2e2e2;
-  }
-  .article.huge .main h5 {
-    color: #e2e2e2;
-  }
-  .article.huge .main h6 {
-    color: #e2e2e2;
-  }
-  .article.huge .headline a {
-    color: #c8dce0;
-  }
-  .article.huge .headline a:hover {
-    color: #c8dce0;
-  }
-  .article.huge .body a {
-    color: #40b4d4;
-  }
-  .article.huge .body a:hover {
-    color: #40b4d4;
-  }
-  .article.huge figure figcaption {
-    color: rgba(255, 255, 255, 0.4);
-  }
-  .article.huge .time {
-    color: rgba(255, 255, 255, 0.4);
-  }
-  .article.huge .post blockquote p {
-    color: #308396;
-  }
-  .article.huge .post .body ul li {
-    color: #c5c5c5;
-  }
-  .article.huge .post .body ol li {
-    color: #c5c5c5;
-  }
-  a.item .article.normal .subtitle {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  a.item .article.normal .headline {
-    color: #c8dce0;
-  }
-  a.item:hover .article.normal .headline {
-    color: #c8dce0;
-  }
-  .pagenavi .item {
-    color: rgba(255, 255, 255, 0.2);
-  }
-  .pagenavi .item a {
-    color: rgba(255, 255, 255, 0.3);
-  }
-  .pagenavi .item a:hover {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  hr {
-    border: 0.5px solid rgba(255, 255, 255, 0.4);
-  }
-  .article .post hr {
-    border: 0.5px solid rgba(255, 255, 255, 0.2);
-  }
-  .footer .slogan {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .footer .meta {
-    color: rgba(255, 255, 255, 0.45);
-  }
-  .footer a {
-    color: rgba(255, 255, 255, 0.45);
-  }
-  #likecoinarea a {
-    color: rgba(255, 255, 255, 0.4);
-    text-decoration: underline;
-  }
-  #likecoinarea a:hover {
-    color: rgba(255, 255, 255, 0.4);
-    text-decoration: underline;
-  }
-  #page h1.title {
-    color: #c8dce0;
-  }
-  #page a {
-    color: #c8dce0;
-  }
-  #page a:hover {
-    color: #c8dce0;
-  }
+.darkscheme {
+  background-color: #181f20;
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) and (max-width: 767.98px) {
-  .article.normal {
+.darkscheme .head .blogname {
+  color: white;
+}
+
+.darkscheme .head nav .item a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.darkscheme .head nav .item a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.darkscheme .article.huge .subtitle {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.darkscheme .article.huge .main {
+  background-color: #181f20;
+}
+
+.darkscheme .article.huge .main p {
+  color: #c5c5c5;
+}
+
+.darkscheme .article.huge .main h2 {
+  color: #e2e2e2;
+}
+
+.darkscheme .article.huge .main h3 {
+  color: #e2e2e2;
+}
+
+.darkscheme .article.huge .main h4 {
+  color: #e2e2e2;
+}
+
+.darkscheme .article.huge .main h5 {
+  color: #e2e2e2;
+}
+
+.darkscheme .article.huge .main h6 {
+  color: #e2e2e2;
+}
+
+.darkscheme .article.huge .headline a {
+  color: #c8dce0;
+}
+
+.darkscheme .article.huge .headline a:hover {
+  color: #c8dce0;
+}
+
+.darkscheme .article.huge .body a {
+  color: #40b4d4;
+}
+
+.darkscheme .article.huge .body a:hover {
+  color: #40b4d4;
+}
+
+.darkscheme .article.huge figure figcaption {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.darkscheme .article.huge .time {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.darkscheme .article.huge .post blockquote p {
+  color: #308396;
+}
+
+.darkscheme .article.huge .post .body ul li {
+  color: #c5c5c5;
+}
+
+.darkscheme .article.huge .post .body ol li {
+  color: #c5c5c5;
+}
+
+.darkscheme a.item .article.normal .subtitle {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.darkscheme a.item .article.normal .headline {
+  color: #c8dce0;
+}
+
+.darkscheme a.item:hover .article.normal .headline {
+  color: #c8dce0;
+}
+
+.darkscheme .pagenavi .item {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.darkscheme .pagenavi .item a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.darkscheme .pagenavi .item a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.darkscheme hr {
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.darkscheme .article .post hr {
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.darkscheme .footer .slogan {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.darkscheme .footer .meta {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.darkscheme .footer a {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.darkscheme #likecoinarea a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: underline;
+}
+
+.darkscheme #likecoinarea a:hover {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: underline;
+}
+
+.darkscheme #page h1.title {
+  color: #c8dce0;
+}
+
+.darkscheme #page a {
+  color: #c8dce0;
+}
+
+.darkscheme #page a:hover {
+  color: #c8dce0;
+}
+
+@media (max-width: 767.98px) {
+  .darkscheme .article.normal {
     border-top: 0.5px solid rgba(255, 255, 255, 0.06);
   }
 }

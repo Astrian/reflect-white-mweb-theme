@@ -348,6 +348,13 @@ a {
     color: rgba(0, 0, 0, 0.3);
     text-decoration: underline;
   }
+
+  .colorScheme {
+    cursor: default;
+    span {
+      cursor: pointer;
+    }
+  }
 }
 
 iframe {
@@ -651,11 +658,9 @@ span.smallcaps {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(24, 31, 32);
-    color: white;
-  }
+.darkscheme {
+  background-color: rgb(24, 31, 32);
+  color: white;
 
   .head {
     .blogname {
