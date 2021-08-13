@@ -1,4 +1,6 @@
 body {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
   font-family: 'Avenir', 'Noto Sans CJK SC', sans-serif;
 }
 
@@ -74,6 +76,8 @@ body {
 }
 
 .article.huge .main {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
   background-color: white;
 }
 
@@ -605,6 +609,8 @@ span.smallcaps {
 }
 
 .darkscheme {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
   background-color: #181f20;
   color: white;
 }
